@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -7,6 +8,8 @@ namespace WebService.Models
 {
     public class MotoristaVeiculos
     {
+        [Key]
+        public int MotoristaVeiculosID { get; set; }
         public string Marca { get; set; }
         public string Modelo { get; set; }
         public string Placa { get; set; }
