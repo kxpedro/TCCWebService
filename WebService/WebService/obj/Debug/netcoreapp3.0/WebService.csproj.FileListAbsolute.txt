@@ -134,7 +134,6 @@ C:\Users\pedro.sarmento\Desktop\Misc\TCCWebService\WebService\WebService\bin\Deb
 C:\Users\pedro.sarmento\Desktop\Misc\TCCWebService\WebService\WebService\bin\Debug\netcoreapp3.0\WebService.runtimeconfig.dev.json
 C:\Users\pedro.sarmento\Desktop\Misc\TCCWebService\WebService\WebService\bin\Debug\netcoreapp3.0\WebService.dll
 C:\Users\pedro.sarmento\Desktop\Misc\TCCWebService\WebService\WebService\bin\Debug\netcoreapp3.0\WebService.pdb
-C:\Users\pedro.sarmento\Desktop\Misc\TCCWebService\WebService\WebService\obj\Debug\netcoreapp3.0\WebService.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\pedro.sarmento\Desktop\Misc\TCCWebService\WebService\WebService\obj\Debug\netcoreapp3.0\WebService.dll
 C:\Users\pedro.sarmento\Desktop\Misc\TCCWebService\WebService\WebService\obj\Debug\netcoreapp3.0\WebService.pdb
 P:\Repository\TCCWebService\WebService\WebService\bin\Debug\netcoreapp3.0\appsettings.Development.json
@@ -217,3 +216,4 @@ P:\Repository\TCCWebService\WebService\WebService\obj\Debug\netcoreapp3.0\static
 P:\Repository\TCCWebService\WebService\WebService\obj\Debug\netcoreapp3.0\WebService.dll
 P:\Repository\TCCWebService\WebService\WebService\obj\Debug\netcoreapp3.0\WebService.pdb
 P:\Repository\TCCWebService\WebService\WebService\obj\Debug\netcoreapp3.0\WebService.genruntimeconfig.cache
+C:\Users\pedro.sarmento\Desktop\Misc\TCCWebService\WebService\WebService\obj\Debug\netcoreapp3.0\WebService.MvcApplicationPartsAssemblyInfo.cache

@@ -4,16 +4,12 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace WebService.Models
+namespace WebService.Entities
 {
-    public class Locacao
+    public class EstacionamentoFluxo
     {
         [Key]
-        public int LocacaoID { get; set; }
-        public DateTime Data { get; set; }
-                        
+        public int EstacionamentoFluxoID { get; set; }
         public virtual Estacionamento Estacionamento { get; set; }
-        public virtual Motorista Motorista { get; set; }
-
     }
 }
