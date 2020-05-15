@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebService", "WebService\We
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebService.Consuming.GoogleMaps", "WebService.Consuming.GoogleMaps\WebService.Consuming.GoogleMaps.csproj", "{73E3C1D0-34B9-4FE8-B914-6CA50C1C9696}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebService.Consuming", "WebService.Consuming\WebService.Consuming.csproj", "{EEB771E6-D940-44DB-8BF0-20D48C1EE451}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{73E3C1D0-34B9-4FE8-B914-6CA50C1C9696}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73E3C1D0-34B9-4FE8-B914-6CA50C1C9696}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73E3C1D0-34B9-4FE8-B914-6CA50C1C9696}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEB771E6-D940-44DB-8BF0-20D48C1EE451}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEB771E6-D940-44DB-8BF0-20D48C1EE451}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEB771E6-D940-44DB-8BF0-20D48C1EE451}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEB771E6-D940-44DB-8BF0-20D48C1EE451}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

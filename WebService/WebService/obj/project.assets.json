@@ -3090,6 +3090,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "WebService.Consuming/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "compile": {
+          "bin/placeholder/WebService.Consuming.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebService.Consuming.dll": {}
+        }
       }
     }
   },
@@ -9643,6 +9653,11 @@
         "system.xml.xpath.xmldocument.4.0.1.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
+    },
+    "WebService.Consuming/1.0.0": {
+      "type": "project",
+      "path": "../WebService.Consuming/WebService.Consuming.csproj",
+      "msbuildProject": "../WebService.Consuming/WebService.Consuming.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -9654,7 +9669,8 @@
       "Microsoft.Extensions.Logging.Debug >= 3.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.0.0",
       "MySql.Data.EntityFrameworkCore >= 8.0.20",
-      "Newtonsoft.Json >= 12.0.3"
+      "Newtonsoft.Json >= 12.0.3",
+      "WebService.Consuming >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -9683,7 +9699,11 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Consuming\\WebService.Consuming.csproj": {
+              "projectPath": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Consuming\\WebService.Consuming.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

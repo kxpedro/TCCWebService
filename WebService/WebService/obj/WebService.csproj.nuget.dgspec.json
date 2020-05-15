@@ -4,6 +4,59 @@
     "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService\\WebService.csproj": {}
   },
   "projects": {
+    "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Consuming\\WebService.Consuming.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Consuming\\WebService.Consuming.csproj",
+        "projectName": "WebService.Consuming",
+        "projectPath": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Consuming\\WebService.Consuming.csproj",
+        "packagesPath": "C:\\Users\\pedro.sarmento\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Consuming\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\pedro.sarmento\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nuget.mumbai.com.br/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService\\WebService.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -27,7 +80,11 @@
         },
         "frameworks": {
           "netcoreapp3.0": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Consuming\\WebService.Consuming.csproj": {
+                "projectPath": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Consuming\\WebService.Consuming.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
