@@ -23,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\WebService.Consuming.GoogleMaps\WebService.Consuming.GoogleMaps.csproj" />
     <ProjectReference Include="..\WebService.Consuming\WebService.Consuming.csproj" />
   </ItemGroup>
 

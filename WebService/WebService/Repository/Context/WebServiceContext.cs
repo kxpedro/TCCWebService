@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using WebService.Entities;
 
-namespace WebService.Repository
+namespace WebService.Context
 {
     public class WebServiceContext : DbContext
     {

@@ -5,7 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Classes\Retrieve\" />
+    <Compile Remove="Classes\Retrieve\**" />
+    <EmbeddedResource Remove="Classes\Retrieve\**" />
+    <None Remove="Classes\Retrieve\**" />
   </ItemGroup>
 
 </Project>

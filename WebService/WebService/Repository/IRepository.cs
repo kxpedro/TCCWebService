@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace WebService.Repository
 {
-    public interface IRepository 
+    public interface IRepository
     {
 
     }

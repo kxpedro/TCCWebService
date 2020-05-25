@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace WebService.Consuming.Classes.Send
+namespace WebService.Consuming.GoogleMaps.Classes
 {
-    public class Routes
+    public class BestRoutes
     {
     }
 }

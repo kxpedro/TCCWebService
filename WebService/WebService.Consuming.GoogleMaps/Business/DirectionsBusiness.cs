@@ -5,40 +5,36 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using WebService.Consuming.GoogleMaps.Classes;
 using WebService.Consuming.GoogleMaps.Routes.Directions;
 
 namespace WebService.Consuming.GoogleMaps.Business
 {
     public class DirectionsBusiness
     {
-        public struct Parameters
+        public async Task<BestRoutes> GetBestRoutesByDirection(string origin, string destination, string arrivalTime, string departureTime)
         {
-            public string Origin { get; set; }
-            public string Destination { get; set; }
-            public string Key { get; set; }
-            public string ArrivalTime { get; set; }
-            public string DepartureTime { get; set; }
+            BestRoutes bestRoutes = new BestRoutes();
+
+            var p = Commun.GetParametersValues(origin, destination, arrivalTime, departureTime);
+            
+            var directions = await GetDirectionsByOriginAndDestination(p);
+
+
+            return bestRoutes;
         }
 
-        public async Task<IEnumerable<Directions>> GetDirectionsByOriginAndDestination(string origin, string destination)
+
+        public async Task<IEnumerable<Directions>> GetDirectionsByOriginAndDestination(Parameters p)
         {
             List<Directions> lsDirections = new List<Directions>();
-            HttpClient httpClient = new HttpClient();
-
-            Parameters p = new Parameters()
-            {
-                Origin = origin,
-                Destination = destination,
-                Key = "AIzaSyD_Kt18RInV_hT53KM7s9NdLPaXBiMmbSc",
-                ArrivalTime = "",
-                DepartureTime = ""
-            };            
+            HttpClient httpClient = new HttpClient();            
 
             string requestUri = $"http://maps.googleapis.com/maps/api/directions/json?origin={p.Origin}&destination={p.Destination}&key={p.Key}";
             httpClient.BaseAddress = new Uri(requestUri);
             httpClient.DefaultRequestHeaders.Accept.Clear();
             httpClient.DefaultRequestHeaders.Accept.Add(
-                new MediaTypeWithQualityHeaderValue("application/json"));                                          
+                new MediaTypeWithQualityHeaderValue("application/json"));                        
 
             HttpResponseMessage response = await httpClient.GetAsync(requestUri);
 

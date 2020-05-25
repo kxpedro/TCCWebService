@@ -14,6 +14,7 @@ namespace WebService.Entities
         public string CPF { get; set; }
         public DateTime Nascimento { get; set; }       
 
+        public virtual MotoristaPreferencias MotoristaPreferencias { get; set; }
         public virtual IEnumerable<Enderecos> Endereco { get; set; }
         public virtual IEnumerable<Contatos> Contatos { get; set; }
         public virtual IEnumerable<Locacao> Locacao { get; set; }

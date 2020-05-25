@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace WebService.Repository.Mapping
+namespace WebService.Repository.Context.Mapping
 {
     public class MotoristaMap
     {

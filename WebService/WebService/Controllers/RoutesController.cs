@@ -5,7 +5,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using WebService.Consuming.Classes.Return;
+using WebService.Consuming.Classes;
+using WebService.Consuming.GoogleMaps.Business;
+using WebService.Entities;
+using WebService.Repository;
 
 namespace WebService.Controllers
 {
@@ -20,15 +23,18 @@ namespace WebService.Controllers
             _logger = logger;
         }
 
-        [HttpGet]
-        public IEnumerable<JsonRoutes> Get()
+        public async Task<IEnumerable<RoutesJson>> GetBestRoutes(string origin, string destination)
         {
-            List<JsonRoutes> lsRoutes = new List<JsonRoutes>();
+            List<RoutesJson> json = new List<RoutesJson>();
+            DirectionsBusiness directionsBusiness = new DirectionsBusiness();
+            MotoristaRepository motoristaRepository = new MotoristaRepository();
+
+            MotoristaPreferencias motoristaPreferencias = motoristaRepository.GetPreferences();
+
+            var bestRoutes = await directionsBusiness.GetBestRoutesByDirection(origin, destination, motoristaPreferencias.ArrivalTime, motoristaPreferencias.DepartureTime);
 
 
-
-
-            return lsRoutes;
+            return json;
         }
         
     }
