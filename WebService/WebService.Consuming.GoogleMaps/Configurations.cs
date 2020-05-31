@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace WebService.Consuming.GoogleMaps.Configurations
+namespace WebService.Consuming.GoogleMaps
 {
     public class Configurations
     {

@@ -5,13 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Entities\ve-EF16.tmp" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.OAuth" Version="2.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.4" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.4">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -23,8 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WebService.Consuming.GoogleMaps\WebService.Consuming.GoogleMaps.csproj" />
-    <ProjectReference Include="..\WebService.Consuming\WebService.Consuming.csproj" />
+    <ProjectReference Include="..\WebService.Business\WebService.Business.csproj" />
+    <ProjectReference Include="..\WebService.Entities\WebService.Entities.csproj" />
   </ItemGroup>
 
 </Project>

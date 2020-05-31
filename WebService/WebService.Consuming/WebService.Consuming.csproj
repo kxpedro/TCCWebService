@@ -5,9 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Classes\Retrieve\**" />
-    <EmbeddedResource Remove="Classes\Retrieve\**" />
-    <None Remove="Classes\Retrieve\**" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OAuth" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WebService.Consuming.GoogleMaps\WebService.Consuming.GoogleMaps.csproj" />
+    <ProjectReference Include="..\WebService.Entities\WebService.Entities.csproj" />
   </ItemGroup>
 
 </Project>
