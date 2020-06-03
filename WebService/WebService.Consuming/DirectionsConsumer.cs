@@ -19,11 +19,11 @@ namespace WebService.Consuming
         /// <param name="arrivalTime">Tempo de chegada</param>
         /// <param name="departureTime">Hora de saida</param>
         /// <returns></returns>
-        public async Task<List<BestRoutes>> GetBestRoutesByDirection(string origin, string destination, string arrivalTime, string departureTime)
+        public async Task<List<Options>> GetBestRoutesByDirection(string origin, string destination, string arrivalTime, string departureTime)
         {
             DirectionsRequest directionsRequest = new DirectionsRequest();
 
-            List<BestRoutes> lsbestRoutes = new List<BestRoutes>();
+            List<Options> lsbestRoutes = new List<Options>();
 
             var p = Commun.GetParametersValues(origin, destination, arrivalTime, departureTime);
             Directions directions = await directionsRequest.GetDirectionsByOriginAndDestination(p);
@@ -37,7 +37,7 @@ namespace WebService.Consuming
                         //var distanceText = l.distance.text;
                         //var durationText = l.duration.text;
 
-                        BestRoutes bestRoutes = new BestRoutes();
+                        Options bestRoutes = new Options();
                         bestRoutes.DistanceRoutesValue = l.distance.value;
                         bestRoutes.DurationRoutesValue = l.duration.value;
 

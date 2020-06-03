@@ -25,38 +25,36 @@ namespace WebService.Controllers
         }
 
         [HttpGet]
-        public async Task<IEnumerable<RoutesJson>> Get(string origin, string destination)
+        public async Task<IEnumerable<TravelOptions>> Get(string origin, string destination)
         {
             MotoristaBusiness motoristaBusiness = new MotoristaBusiness();
             BestRoutesBusiness bestRoutesBusiness = new BestRoutesBusiness();
 
             MotoristaPreferencias motoristaPreferencias = motoristaBusiness.GetPreferencias(string.Empty);
 
-            List<RoutesJson> lsRoutesJson = new List<RoutesJson>();
-            List<BestRoutes> bestRoutes = await bestRoutesBusiness.GetBestRoutes(origin, destination, motoristaPreferencias);
+            List<TravelOptions> lsjson = new List<TravelOptions>();
+            List<Options> bestRoutes = await bestRoutesBusiness.GetBestRoutes(origin, destination, motoristaPreferencias);
 
             if(bestRoutes.Any())
             {            
                 foreach (var br in bestRoutes)
                 {
-                    RoutesJson routesJson = new RoutesJson();
-                
-                    routesJson.RoutesDistanceValue = br.DistanceRoutesValue;
-                    routesJson.RoutesDurationValue = br.DurationRoutesValue;
-                    routesJson.Status = "Rota encontrada";
+                    TravelOptions json = new TravelOptions();                
 
-                    lsRoutesJson.Add(routesJson);
+                    json.Status = "Rota encontrada";
+
+                    lsjson.Add(json);
                 }
             }
             else
             {
-                RoutesJson routesJson = new RoutesJson();
-                routesJson.Status = "Rota não encontrada.";
+                TravelOptions json = new TravelOptions();
+                json.Status = "Rota não encontrada.";
 
-                lsRoutesJson.Add(routesJson);
+                lsjson.Add(json);
             }
 
-            return lsRoutesJson;
+            return lsjson;
         }
         
     }

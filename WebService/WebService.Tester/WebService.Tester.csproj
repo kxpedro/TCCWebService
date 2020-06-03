@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Estacionamentos\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WebService.Business\WebService.Business.csproj" />
+    <ProjectReference Include="..\WebService.Entities\WebService.Entities.csproj" />
+  </ItemGroup>
+
+</Project>
