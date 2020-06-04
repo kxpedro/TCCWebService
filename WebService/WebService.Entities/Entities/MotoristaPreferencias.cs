@@ -11,7 +11,7 @@ namespace WebService.Entities
         [Key]
         public int MotoristaID { get; set; }
         public string ArrivalTime { get; set; }
-        public string DepartureTime { get; set; }
+        public TimeSpan DepartureTime { get; set; }
         
 
         public virtual Motorista Motorista { get; set; }

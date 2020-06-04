@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using WebService.Business.Consumer;
+using WebService.Entities.Consumer;
 using WebService.Tester;
 
 namespace WebService.Controllers
@@ -21,19 +23,33 @@ namespace WebService.Controllers
         }
 
         [HttpGet]
-        public void Get()
+        public async void Get()
         {
+            BestRoutesBusiness bestRoutesBusiness = new BestRoutesBusiness();
+
             CenariosTester cenariosTester = new CenariosTester();
+            EstacionamentoTester estacionamentoTester = new EstacionamentoTester();
 
             var cenarios = cenariosTester.CriarCenariosParaTeste();
+            var estacionamentos = estacionamentoTester.CriaEstacionamentosParaTeste();
 
-            foreach (var item in cenarios)
-            {
-                cenariosTester.TestarCenarioPorID(item.CenarioID);
+            foreach (var cen in cenarios)
+            {                
+                //Get para transporte publico
+                List<Options> options = await bestRoutesBusiness.GetBestRoutes(cen.EnderecoOrigem, cen.EnderecoDestino, cen.HorarioSaida, cen.TipoTransporte);
+
+                //Get para veiculo
+
+                //Fazer estimativa de rota com aplicativos de transporte
+
+                //Buscar estacionamentos perto da localização de destino
+                foreach (var est in estacionamentos)
+                {
+                    //
+                }
             }
 
-
-
+            //Retornar comparativo entre as opções
         }
     }
 }

@@ -56,6 +56,7 @@ namespace WebService.Entities.Consumer.GoogleMaps
     {
         public Distance distance { get; set; }
         public Duration duration { get; set; }
+        public Duration_In_Traffic duration_in_traffic { get; set; }
         public string end_address { get; set; }
         public End_Location end_location { get; set; }
         public string start_address { get; set; }
@@ -72,6 +73,12 @@ namespace WebService.Entities.Consumer.GoogleMaps
     }
 
     public class Duration
+    {
+        public string text { get; set; }
+        public int value { get; set; }
+    }
+
+    public class Duration_In_Traffic
     {
         public string text { get; set; }
         public int value { get; set; }

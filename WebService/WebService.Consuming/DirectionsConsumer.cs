@@ -19,35 +19,34 @@ namespace WebService.Consuming
         /// <param name="arrivalTime">Tempo de chegada</param>
         /// <param name="departureTime">Hora de saida</param>
         /// <returns></returns>
-        public async Task<List<Options>> GetBestRoutesByDirection(string origin, string destination, string arrivalTime, string departureTime)
+        public async Task<List<Options>> GetBestRoutesByDirection(string origin, string destination, TimeSpan departureTime, string arrivalTime = "", string travelMode = "")
         {
             DirectionsRequest directionsRequest = new DirectionsRequest();
 
-            List<Options> lsbestRoutes = new List<Options>();
+            List<Options> lsOptions = new List<Options>();
 
-            var p = Commun.GetParametersValues(origin, destination, arrivalTime, departureTime);
+            var p = Commun.GetParametersValues(origin, destination, departureTime, arrivalTime, travelMode);
             Directions directions = await directionsRequest.GetDirectionsByOriginAndDestination(p);
 
-            if (directions.status != "NOT_FOUND" || directions.status != "ZERO_RESULTS")
+            if (directions != null && (directions.status != "NOT_FOUND" || directions.status != "ZERO_RESULTS"))
             {
                 foreach (var r in directions.routes)
                 {
                     foreach (var l in r.legs)
                     {
-                        //var distanceText = l.distance.text;
-                        //var durationText = l.duration.text;
+                        Options option = new Options();
 
-                        Options bestRoutes = new Options();
-                        bestRoutes.DistanceRoutesValue = l.distance.value;
-                        bestRoutes.DurationRoutesValue = l.duration.value;
+                        option.DistanceValue = l.distance.value;
+                        option.DurationValue = l.duration.value;
+                        option.TrafficDurationValue = l.duration_in_traffic.value;
+                        option.Description = travelMode;
 
-                        lsbestRoutes.Add(bestRoutes);
-
+                        lsOptions.Add(option);
                     }
                 }
             }
 
-            return lsbestRoutes;
+            return lsOptions;
         }
     }
 }

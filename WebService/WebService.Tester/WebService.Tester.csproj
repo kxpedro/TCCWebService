@@ -5,7 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Estacionamentos\" />
+    <Compile Remove="Estacionamentos\**" />
+    <EmbeddedResource Remove="Estacionamentos\**" />
+    <None Remove="Estacionamentos\**" />
   </ItemGroup>
 
   <ItemGroup>
