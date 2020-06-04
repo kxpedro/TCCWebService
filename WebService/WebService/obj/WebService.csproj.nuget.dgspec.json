@@ -1,46 +1,41 @@
 {
   "format": 1,
   "restore": {
-    "P:\\Repository\\TCCWebService\\WebService\\WebService\\WebService.csproj": {}
+    "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService\\WebService.csproj": {}
   },
   "projects": {
-    "P:\\Repository\\TCCWebService\\WebService\\WebService.Business\\WebService.Business.csproj": {
+    "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Business\\WebService.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "P:\\Repository\\TCCWebService\\WebService\\WebService.Business\\WebService.Business.csproj",
+        "projectUniqueName": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Business\\WebService.Business.csproj",
         "projectName": "WebService.Business",
-        "projectPath": "P:\\Repository\\TCCWebService\\WebService\\WebService.Business\\WebService.Business.csproj",
-        "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-        "outputPath": "P:\\Repository\\TCCWebService\\WebService\\WebService.Business\\obj\\",
+        "projectPath": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Business\\WebService.Business.csproj",
+        "packagesPath": "C:\\Users\\pedro.sarmento\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Business\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\pedro.sarmento\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://192.168.0.250:8088/nuget": {},
+          "http://nuget.mumbai.com.br/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "P:\\Repository\\TCCWebService\\WebService\\WebService.Consuming.GoogleMaps\\WebService.Consuming.GoogleMaps.csproj": {
-                "projectPath": "P:\\Repository\\TCCWebService\\WebService\\WebService.Consuming.GoogleMaps\\WebService.Consuming.GoogleMaps.csproj"
+              "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Consuming.GoogleMaps\\WebService.Consuming.GoogleMaps.csproj": {
+                "projectPath": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Consuming.GoogleMaps\\WebService.Consuming.GoogleMaps.csproj"
               },
-              "P:\\Repository\\TCCWebService\\WebService\\WebService.Consuming\\WebService.Consuming.csproj": {
-                "projectPath": "P:\\Repository\\TCCWebService\\WebService\\WebService.Consuming\\WebService.Consuming.csproj"
+              "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Consuming\\WebService.Consuming.csproj": {
+                "projectPath": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Consuming\\WebService.Consuming.csproj"
               },
-              "P:\\Repository\\TCCWebService\\WebService\\WebService.DataAccess\\WebService.DataAccess.csproj": {
-                "projectPath": "P:\\Repository\\TCCWebService\\WebService\\WebService.DataAccess\\WebService.DataAccess.csproj"
+              "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.DataAccess\\WebService.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.DataAccess\\WebService.DataAccess.csproj"
               }
             }
           }
@@ -81,60 +76,41 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.0.1, 3.0.1]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "P:\\Repository\\TCCWebService\\WebService\\WebService.Consuming.GoogleMaps\\WebService.Consuming.GoogleMaps.csproj": {
+    "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Consuming.GoogleMaps\\WebService.Consuming.GoogleMaps.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "P:\\Repository\\TCCWebService\\WebService\\WebService.Consuming.GoogleMaps\\WebService.Consuming.GoogleMaps.csproj",
+        "projectUniqueName": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Consuming.GoogleMaps\\WebService.Consuming.GoogleMaps.csproj",
         "projectName": "WebService.Consuming.GoogleMaps",
-        "projectPath": "P:\\Repository\\TCCWebService\\WebService\\WebService.Consuming.GoogleMaps\\WebService.Consuming.GoogleMaps.csproj",
-        "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-        "outputPath": "P:\\Repository\\TCCWebService\\WebService\\WebService.Consuming.GoogleMaps\\obj\\",
+        "projectPath": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Consuming.GoogleMaps\\WebService.Consuming.GoogleMaps.csproj",
+        "packagesPath": "C:\\Users\\pedro.sarmento\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Consuming.GoogleMaps\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\pedro.sarmento\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://192.168.0.250:8088/nuget": {},
+          "http://nuget.mumbai.com.br/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "P:\\Repository\\TCCWebService\\WebService\\WebService.Entities\\WebService.Entities.csproj": {
-                "projectPath": "P:\\Repository\\TCCWebService\\WebService\\WebService.Entities\\WebService.Entities.csproj"
+              "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Entities\\WebService.Entities.csproj": {
+                "projectPath": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Entities\\WebService.Entities.csproj"
               }
             }
           }
@@ -171,63 +147,44 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.0.1, 3.0.1]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "P:\\Repository\\TCCWebService\\WebService\\WebService.Consuming\\WebService.Consuming.csproj": {
+    "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Consuming\\WebService.Consuming.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "P:\\Repository\\TCCWebService\\WebService\\WebService.Consuming\\WebService.Consuming.csproj",
+        "projectUniqueName": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Consuming\\WebService.Consuming.csproj",
         "projectName": "WebService.Consuming",
-        "projectPath": "P:\\Repository\\TCCWebService\\WebService\\WebService.Consuming\\WebService.Consuming.csproj",
-        "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-        "outputPath": "P:\\Repository\\TCCWebService\\WebService\\WebService.Consuming\\obj\\",
+        "projectPath": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Consuming\\WebService.Consuming.csproj",
+        "packagesPath": "C:\\Users\\pedro.sarmento\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Consuming\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\pedro.sarmento\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://192.168.0.250:8088/nuget": {},
+          "http://nuget.mumbai.com.br/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "P:\\Repository\\TCCWebService\\WebService\\WebService.Consuming.GoogleMaps\\WebService.Consuming.GoogleMaps.csproj": {
-                "projectPath": "P:\\Repository\\TCCWebService\\WebService\\WebService.Consuming.GoogleMaps\\WebService.Consuming.GoogleMaps.csproj"
+              "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Consuming.GoogleMaps\\WebService.Consuming.GoogleMaps.csproj": {
+                "projectPath": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Consuming.GoogleMaps\\WebService.Consuming.GoogleMaps.csproj"
               },
-              "P:\\Repository\\TCCWebService\\WebService\\WebService.Entities\\WebService.Entities.csproj": {
-                "projectPath": "P:\\Repository\\TCCWebService\\WebService\\WebService.Entities\\WebService.Entities.csproj"
+              "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Entities\\WebService.Entities.csproj": {
+                "projectPath": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Entities\\WebService.Entities.csproj"
               }
             }
           }
@@ -264,60 +221,41 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.0.1, 3.0.1]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "P:\\Repository\\TCCWebService\\WebService\\WebService.DataAccess\\WebService.DataAccess.csproj": {
+    "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.DataAccess\\WebService.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "P:\\Repository\\TCCWebService\\WebService\\WebService.DataAccess\\WebService.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.DataAccess\\WebService.DataAccess.csproj",
         "projectName": "WebService.DataAccess",
-        "projectPath": "P:\\Repository\\TCCWebService\\WebService\\WebService.DataAccess\\WebService.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-        "outputPath": "P:\\Repository\\TCCWebService\\WebService\\WebService.DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.DataAccess\\WebService.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\pedro.sarmento\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\pedro.sarmento\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://192.168.0.250:8088/nuget": {},
+          "http://nuget.mumbai.com.br/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "P:\\Repository\\TCCWebService\\WebService\\WebService.Entities\\WebService.Entities.csproj": {
-                "projectPath": "P:\\Repository\\TCCWebService\\WebService\\WebService.Entities\\WebService.Entities.csproj"
+              "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Entities\\WebService.Entities.csproj": {
+                "projectPath": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Entities\\WebService.Entities.csproj"
               }
             }
           }
@@ -358,53 +296,34 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.0.1, 3.0.1]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "P:\\Repository\\TCCWebService\\WebService\\WebService.Entities\\WebService.Entities.csproj": {
+    "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Entities\\WebService.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "P:\\Repository\\TCCWebService\\WebService\\WebService.Entities\\WebService.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Entities\\WebService.Entities.csproj",
         "projectName": "WebService.Entities",
-        "projectPath": "P:\\Repository\\TCCWebService\\WebService\\WebService.Entities\\WebService.Entities.csproj",
-        "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-        "outputPath": "P:\\Repository\\TCCWebService\\WebService\\WebService.Entities\\obj\\",
+        "projectPath": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Entities\\WebService.Entities.csproj",
+        "packagesPath": "C:\\Users\\pedro.sarmento\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Entities\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\pedro.sarmento\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://192.168.0.250:8088/nuget": {},
+          "http://nuget.mumbai.com.br/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -444,63 +363,44 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.0.1, 3.0.1]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "P:\\Repository\\TCCWebService\\WebService\\WebService.Tester\\WebService.Tester.csproj": {
+    "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Tester\\WebService.Tester.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "P:\\Repository\\TCCWebService\\WebService\\WebService.Tester\\WebService.Tester.csproj",
+        "projectUniqueName": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Tester\\WebService.Tester.csproj",
         "projectName": "WebService.Tester",
-        "projectPath": "P:\\Repository\\TCCWebService\\WebService\\WebService.Tester\\WebService.Tester.csproj",
-        "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-        "outputPath": "P:\\Repository\\TCCWebService\\WebService\\WebService.Tester\\obj\\",
+        "projectPath": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Tester\\WebService.Tester.csproj",
+        "packagesPath": "C:\\Users\\pedro.sarmento\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Tester\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\pedro.sarmento\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://192.168.0.250:8088/nuget": {},
+          "http://nuget.mumbai.com.br/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "P:\\Repository\\TCCWebService\\WebService\\WebService.Business\\WebService.Business.csproj": {
-                "projectPath": "P:\\Repository\\TCCWebService\\WebService\\WebService.Business\\WebService.Business.csproj"
+              "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Business\\WebService.Business.csproj": {
+                "projectPath": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Business\\WebService.Business.csproj"
               },
-              "P:\\Repository\\TCCWebService\\WebService\\WebService.Entities\\WebService.Entities.csproj": {
-                "projectPath": "P:\\Repository\\TCCWebService\\WebService\\WebService.Entities\\WebService.Entities.csproj"
+              "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Entities\\WebService.Entities.csproj": {
+                "projectPath": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Entities\\WebService.Entities.csproj"
               }
             }
           }
@@ -523,66 +423,47 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.0.1, 3.0.1]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "P:\\Repository\\TCCWebService\\WebService\\WebService\\WebService.csproj": {
+    "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService\\WebService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "P:\\Repository\\TCCWebService\\WebService\\WebService\\WebService.csproj",
+        "projectUniqueName": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService\\WebService.csproj",
         "projectName": "WebService",
-        "projectPath": "P:\\Repository\\TCCWebService\\WebService\\WebService\\WebService.csproj",
-        "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-        "outputPath": "P:\\Repository\\TCCWebService\\WebService\\WebService\\obj\\",
+        "projectPath": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService\\WebService.csproj",
+        "packagesPath": "C:\\Users\\pedro.sarmento\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\pedro.sarmento\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://192.168.0.250:8088/nuget": {},
+          "http://nuget.mumbai.com.br/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "P:\\Repository\\TCCWebService\\WebService\\WebService.Business\\WebService.Business.csproj": {
-                "projectPath": "P:\\Repository\\TCCWebService\\WebService\\WebService.Business\\WebService.Business.csproj"
+              "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Business\\WebService.Business.csproj": {
+                "projectPath": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Business\\WebService.Business.csproj"
               },
-              "P:\\Repository\\TCCWebService\\WebService\\WebService.Entities\\WebService.Entities.csproj": {
-                "projectPath": "P:\\Repository\\TCCWebService\\WebService\\WebService.Entities\\WebService.Entities.csproj"
+              "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Entities\\WebService.Entities.csproj": {
+                "projectPath": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Entities\\WebService.Entities.csproj"
               },
-              "P:\\Repository\\TCCWebService\\WebService\\WebService.Tester\\WebService.Tester.csproj": {
-                "projectPath": "P:\\Repository\\TCCWebService\\WebService\\WebService.Tester\\WebService.Tester.csproj"
+              "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Tester\\WebService.Tester.csproj": {
+                "projectPath": "C:\\Users\\pedro.sarmento\\Desktop\\Misc\\TCCWebService\\WebService\\WebService.Tester\\WebService.Tester.csproj"
               }
             }
           }
@@ -641,24 +522,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.0.1, 3.0.1]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.0.3, 3.0.3]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -667,7 +530,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

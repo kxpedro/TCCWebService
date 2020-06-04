@@ -26,6 +26,7 @@ namespace WebService.Controllers
         public async void Get()
         {
             BestRoutesBusiness bestRoutesBusiness = new BestRoutesBusiness();
+            TransportAppBusiness transportAppBusiness = new TransportAppBusiness();
 
             CenariosTester cenariosTester = new CenariosTester();
             EstacionamentoTester estacionamentoTester = new EstacionamentoTester();
@@ -34,13 +35,22 @@ namespace WebService.Controllers
             var estacionamentos = estacionamentoTester.CriaEstacionamentosParaTeste();
 
             foreach (var cen in cenarios)
-            {                
-                //Get para transporte publico
-                List<Options> options = await bestRoutesBusiness.GetBestRoutes(cen.EnderecoOrigem, cen.EnderecoDestino, cen.HorarioSaida, cen.TipoTransporte);
+            {
+                //Get Google maps para transporte publico
+                List<Options> optionsTransportePublico = await bestRoutesBusiness.GetBestRoutes(cen.EnderecoOrigem, cen.EnderecoDestino, cen.HorarioSaida, "transit");
 
-                //Get para veiculo
+                //Get Google maps para veiculos
+                List<Options> optionsVeiculos = await bestRoutesBusiness.GetBestRoutes(cen.EnderecoOrigem, cen.EnderecoDestino, cen.HorarioSaida, "driving");
 
-                //Fazer estimativa de rota com aplicativos de transporte
+                //Fazer estimativa de custo com aplicativos de transporte
+                double valorTransporteAplicativo = 0.0;
+                foreach (var opt in optionsVeiculos)
+                {
+                    valorTransporteAplicativo = transportAppBusiness.GetCosts(opt.DurationValue, opt.DistanceValue);
+                }
+
+                //Fazer estimativa de custo com taxi
+
 
                 //Buscar estacionamentos perto da localização de destino
                 foreach (var est in estacionamentos)

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using WebService.Consuming;
 using WebService.Entities;
 using WebService.Entities.Consumer;
+using WebService.Entities.Enum;
 
 namespace WebService.Business.Consumer
 {
@@ -26,8 +27,21 @@ namespace WebService.Business.Consumer
             return lsOptions;
         }
 
+        public eTransportOptions CompareCostsOfAllTransportOptions(double transportAppCost, double transitCost, double publicTransportCost, double cabCost)
+        {
+            return eTransportOptions.Driver;
+        }
+
+        public eTransportOptions CompareTimeOfAllTransportOptions(int transportAppDuration, int transitDuration, int publicTransportDuration, int cabDuration)
+        {
+            return eTransportOptions.Driver;
+        }
+
+        public eTransportOptions CompareDistanceOfAllTransportOptions(int transportAppDistance, int transitDistance, int publicTransportDistance, int cabDistance)
+        {
+            return eTransportOptions.Driver;
+        }
 
 
-        
     }
 }
