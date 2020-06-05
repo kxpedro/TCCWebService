@@ -31,7 +31,7 @@ namespace WebService.Consuming
             if (directions != null && (directions.status != "NOT_FOUND" || directions.status != "ZERO_RESULTS"))
             {
                 foreach (var r in directions.routes)
-                {
+                {                    
                     foreach (var l in r.legs)
                     {
                         Options option = new Options();
@@ -40,6 +40,7 @@ namespace WebService.Consuming
                         option.DurationValue = l.duration.value;
                         option.TrafficDurationValue = l.duration_in_traffic.value;
                         option.Description = travelMode;
+                        option.CostValue = l.fare.value;
 
                         lsOptions.Add(option);
                     }

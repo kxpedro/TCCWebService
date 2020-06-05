@@ -13,7 +13,7 @@ namespace WebService.Entities
         public string NomeFantasia { get; set; }
         public string RazaoSocial { get; set; }
         public string CNPJ { get; set; }
-
+        public int Vagas { get; set; }
         public virtual Enderecos Endereco { get; set; }
         public virtual IEnumerable<Contatos> Contatos { get; set; }
         public virtual IEnumerable<EstacionamentoFluxo> EstacionamentoFluxo { get; set; }

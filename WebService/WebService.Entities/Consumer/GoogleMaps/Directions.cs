@@ -60,11 +60,20 @@ namespace WebService.Entities.Consumer.GoogleMaps
         public string end_address { get; set; }
         public End_Location end_location { get; set; }
         public string start_address { get; set; }
+        public Fare fare { get; set; }
         public Start_Location start_location { get; set; }
         public Step[] steps { get; set; }
         public object[] traffic_speed_entry { get; set; }
         public object[] via_waypoint { get; set; }
     }
+
+    public class Fare 
+    {        
+        public string currency { get; set; }
+        public string text { get; set; }
+        public double value { get; set; }
+    }
+
 
     public class Distance
     {
