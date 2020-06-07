@@ -26,22 +26,4 @@ namespace WebService.Entities.Consumer
         public double CostValue { get; set; }
     }
 
-    public class OptionDistance
-    {
-        public eTransportOptions TransportOptions { get; set; }
-        public double Value { get; set; }
-    }
-
-    public class OptionDuration
-    {
-        public eTransportOptions TransportOptions { get; set; }
-        public int Value { get; set; }
-    }
-
-    public class OptionValue
-    {
-        public eTransportOptions TransportOptions { get; set; }
-        public double Value { get; set; }
-    }
-
 }

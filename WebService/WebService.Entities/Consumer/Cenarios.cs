@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using WebService.Entities.Enum;
 
 namespace WebService.Entities.Consumer
 {
@@ -12,7 +13,7 @@ namespace WebService.Entities.Consumer
         /// <summary>
         /// distance, time, cost    
         /// </summary>
-        public string PreferenciaUsuario { get; set; }
+        public ePreferences PreferenciaUsuario { get; set; }
         /// <summary>
         /// mode 
         /// </summary>

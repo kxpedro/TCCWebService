@@ -7,7 +7,7 @@ namespace WebService.Entities.Consumer.GoogleMaps
     public class Directions
     {
         public Geocoded_Waypoints[] geocoded_waypoints { get; set; }
-        public Route[] routes { get; set; }
+        public Routes[] routes { get; set; }
         public string status { get; set; }
     }
 
@@ -18,11 +18,12 @@ namespace WebService.Entities.Consumer.GoogleMaps
         public string[] types { get; set; }
     }
 
-    public class Route
+    public class Routes
     {
         public Bounds bounds { get; set; }
         public string copyrights { get; set; }
         public Leg[] legs { get; set; }
+        public Fare fare { get; set; }
         public Overview_Polyline overview_polyline { get; set; }
         public string summary { get; set; }
         public object[] warnings { get; set; }
@@ -60,7 +61,6 @@ namespace WebService.Entities.Consumer.GoogleMaps
         public string end_address { get; set; }
         public End_Location end_location { get; set; }
         public string start_address { get; set; }
-        public Fare fare { get; set; }
         public Start_Location start_location { get; set; }
         public Step[] steps { get; set; }
         public object[] traffic_speed_entry { get; set; }

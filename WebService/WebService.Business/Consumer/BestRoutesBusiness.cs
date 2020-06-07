@@ -22,7 +22,7 @@ namespace WebService.Business.Consumer
         public async Task<List<Options>> GetBestRoutes(string origin, string destination, TimeSpan departureTime, string arrivalTime = "", string travelMode = "")
         {
             DirectionsConsumer directionsConsumer = new DirectionsConsumer();
-            List<Options> lsOptions = await directionsConsumer.GetBestRoutesByDirection(origin, destination, departureTime, string.Empty, travelMode);
+            List<Options> lsOptions = await directionsConsumer.GetBestRoutesByDirection(origin, destination, departureTime, arrivalTime, travelMode);
 
             return lsOptions;
         }

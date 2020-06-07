@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using WebService.Business.Consumer;
 using WebService.Entities.Consumer;
+using WebService.Entities.Enum;
 
 namespace WebService.Tester
 {
@@ -17,8 +18,8 @@ namespace WebService.Tester
                 CenarioID = 1,
                 EnderecoOrigem = "Avenida Polonia, 1030 - Sao Geraldo, Porto Alegre - RS",
                 EnderecoDestino = "Rua dos Andradas, 736 - Centro Historico, Porto Alegre - RS",
-                PreferenciaUsuario = "time",
-                TipoTransporte = "driving",
+                //PreferenciaUsuario = ePreferences.Duration,
+                //TipoTransporte = "driving",
                 HorarioSaida = new TimeSpan(10, 0, 0)
             };           
 
@@ -27,8 +28,8 @@ namespace WebService.Tester
                 CenarioID = 2,
                 EnderecoOrigem = "Avenida Polonia, 1030 - Sao Geraldo, Porto Alegre - RS",
                 EnderecoDestino = "Rua dos Andradas, 736 - Centro Historico, Porto Alegre - RS",
-                PreferenciaUsuario = "time",
-                TipoTransporte = "driving",
+                //PreferenciaUsuario = ePreferences.Duration,
+                //TipoTransporte = "driving",
                 HorarioSaida = new TimeSpan(17, 30, 0)
             };
 
@@ -37,8 +38,8 @@ namespace WebService.Tester
                 CenarioID = 3,
                 EnderecoOrigem = "Rua Voluntários da Patria, 1071 - Centro Historico, Porto Alegre - RS",
                 EnderecoDestino = "Avenida Julio de Castilhos, 3 - Centro Historico, Porto Alegre - RS",
-                PreferenciaUsuario = "cost",
-                TipoTransporte = "transit",
+                //PreferenciaUsuario = ePreferences.Cost,
+                //TipoTransporte = "transit",
                 HorarioSaida = new TimeSpan(10, 0, 0)
             };
 
@@ -47,8 +48,8 @@ namespace WebService.Tester
                 CenarioID = 4,
                 EnderecoOrigem = "Rua Voluntários da Patria, 1071 - Centro Historico, Porto Alegre - RS",
                 EnderecoDestino = "Avenida Julio de Castilhos, 3 - Centro Historico, Porto Alegre - RS",
-                PreferenciaUsuario = "cost",
-                TipoTransporte = "transit",
+                //PreferenciaUsuario = ePreferences.Cost,
+                //TipoTransporte = "transit",
                 HorarioSaida = new TimeSpan(17, 30, 0)
             };
 
@@ -57,8 +58,8 @@ namespace WebService.Tester
                 CenarioID = 5,
                 EnderecoOrigem = "Rua Felizardo, 482 - Jardim Botanico, Porto Alegre - RS",
                 EnderecoDestino = "Avenida Plinio Brasil Milano, 1000 - Higienopolis, Porto Alegre - RS",
-                PreferenciaUsuario = "time",
-                TipoTransporte = "driving",
+                //PreferenciaUsuario = ePreferences.Duration,
+                //TipoTransporte = "driving",
                 HorarioSaida = new TimeSpan(10, 0, 0)
             };
 
@@ -67,8 +68,8 @@ namespace WebService.Tester
                 CenarioID = 6,
                 EnderecoOrigem = "Rua Felizardo, 482 - Jardim Botanico, Porto Alegre - RS",
                 EnderecoDestino = "Avenida Plinio Brasil Milano, 1000 - Higienopolis, Porto Alegre - RS",
-                PreferenciaUsuario = "time",
-                TipoTransporte = "driving",
+                //PreferenciaUsuario = ePreferences.Duration,
+                //TipoTransporte = "driving",
                 HorarioSaida = new TimeSpan(17, 30, 0)
             };
 
@@ -77,8 +78,8 @@ namespace WebService.Tester
                 CenarioID = 7,
                 EnderecoOrigem = "Rua Cidreira, 136 - Ipanema, Porto Alegre - RS",
                 EnderecoDestino = "Avenida Icarai, 1088 - Cristal, Porto Alegre - RS",
-                PreferenciaUsuario = "",
-                TipoTransporte = "transit",
+                //PreferenciaUsuario = ePreferences.Cost,
+                //TipoTransporte = "transit",
                 HorarioSaida = new TimeSpan(10, 0, 0)
             };
 
@@ -87,8 +88,8 @@ namespace WebService.Tester
                 CenarioID = 8,
                 EnderecoOrigem = "Rua Cidreira, 136 - Ipanema, Porto Alegre - RS",
                 EnderecoDestino = "Avenida Icarai, 1088 - Cristal, Porto Alegre - RS",
-                PreferenciaUsuario = "",
-                TipoTransporte = "transit",
+                //PreferenciaUsuario = ePreferences.Cost,
+                //TipoTransporte = "transit",
                 HorarioSaida = new TimeSpan(17, 30, 0)
             };
 
@@ -97,8 +98,8 @@ namespace WebService.Tester
                 CenarioID = 9,
                 EnderecoOrigem = "Rua Dr Florencio Ygartua, 238 - Moinhos de Vento, Porto Alegre - RS",
                 EnderecoDestino = "Rua Demetrio Ribeiro, 330 - Centro Histórico, Porto Alegre - RS",
-                PreferenciaUsuario = "distance",
-                TipoTransporte = "driving",
+                //PreferenciaUsuario = ePreferences.Distance,
+                //TipoTransporte = "driving",
                 HorarioSaida = new TimeSpan(10, 0, 0)
             };
 
@@ -107,8 +108,8 @@ namespace WebService.Tester
                 CenarioID = 10,
                 EnderecoOrigem = "Rua Dr Florencio Ygartua, 238 - Moinhos de Vento, Porto Alegre - RS",
                 EnderecoDestino = "Rua Demetrio Ribeiro, 330 - Centro Histórico, Porto Alegre - RS",
-                PreferenciaUsuario = "distance",
-                TipoTransporte = "driving",
+                //PreferenciaUsuario = ePreferences.Distance,
+                //TipoTransporte = "driving",
                 HorarioSaida = new TimeSpan(17, 30, 0)
             };
 

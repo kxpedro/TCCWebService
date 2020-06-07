@@ -31,16 +31,21 @@ namespace WebService.Consuming
             if (directions != null && (directions.status != "NOT_FOUND" || directions.status != "ZERO_RESULTS"))
             {
                 foreach (var r in directions.routes)
-                {                    
+                {                  
+                    Options option = new Options();
+
+                    if(r.fare != null)
+                        option.CostValue = r.fare.value;
+
                     foreach (var l in r.legs)
                     {
-                        Options option = new Options();
-
                         option.DistanceValue = l.distance.value;
                         option.DurationValue = l.duration.value;
-                        option.TrafficDurationValue = l.duration_in_traffic.value;
+
+                        if(l.duration_in_traffic != null)
+                            option.TrafficDurationValue = l.duration_in_traffic.value;
+
                         option.Description = travelMode;
-                        option.CostValue = l.fare.value;
 
                         lsOptions.Add(option);
                     }
