@@ -21,11 +21,6 @@ namespace WebService.Consuming.GoogleMaps.Requests
             if (dateTime <= DateTime.Now)
                 dateTime = dateTime.AddDays(1);
 
-            //DateTime origin = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
-            //TimeSpan diff = dateTime.ToUniversalTime() - origin;
-            //var departureTime =  Math.Floor(diff.TotalSeconds);
-
-
             Int32 departureTime = (Int32)(dateTime.Subtract(new DateTime(1970, 1, 1))).TotalSeconds;
 
             string requestUri = $"https://maps.googleapis.com/maps/api/directions/json?origin={p.Origin}&destination={p.Destination}&mode={p.TravelMode}&departure_time={departureTime}&key={p.Key}";

@@ -6,7 +6,7 @@ namespace WebService.Consuming
 {
     public class TransportAppConsumer
     {
-        public double CalculateCostFromTimeAndDistance(int tempoDeViagem, int distanciaDeViagem)
+        public double CalculateCostFromTimeAndDistance(double tempoDeViagem, double distanciaDeViagem)
         {
             double valorInicial = 2.30;
             double custoFixo = 0.75;
@@ -15,8 +15,8 @@ namespace WebService.Consuming
 
             double precoMinimo = 6.94;
 
-            double valorKmPercorrido = (double)tempoDeViagem * taxaPorMinuto;
-            double valorDuracaoViagemPorMinuto = (double)distanciaDeViagem * taxaPorKm;
+            double valorKmPercorrido = tempoDeViagem * taxaPorMinuto;
+            double valorDuracaoViagemPorMinuto = distanciaDeViagem * taxaPorKm;
 
             double custoTotal = valorInicial + custoFixo + valorDuracaoViagemPorMinuto + valorKmPercorrido;
 

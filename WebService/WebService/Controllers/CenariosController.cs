@@ -26,14 +26,14 @@ namespace WebService.Controllers
         }
 
         [HttpGet]
-        public async Task<List<Comparatives>> Get(string option, int scenarioId)
+        public async Task<List<Comparatives>> Get(string option, int scenarioId, double acceptableParkingDistance)
         {
-
             ScenarioOption cenarioOption = new ScenarioOption { Option = option, ScenarioID = scenarioId };
 
             BestRoutesBusiness bestRoutesBusiness = new BestRoutesBusiness();
             TransportAppBusiness transportAppBusiness = new TransportAppBusiness();
             CabBusiness cabBusiness = new CabBusiness();
+            ParkingBusiness parkingBusiness = new ParkingBusiness();
 
             CenariosTester cenariosTester = new CenariosTester();
             EstacionamentoTester estacionamentoTester = new EstacionamentoTester();
@@ -43,20 +43,9 @@ namespace WebService.Controllers
 
             List<Comparatives> lsComparatives = new List<Comparatives>();
             List<ComparativeOptions> lsComparativeOptions = new List<ComparativeOptions>();
-            //Lista de Valores
-            //List<OptionValue> optionValues = new List<OptionValue>();
-            ////Lista de Distancia
-            //List<OptionDistance> optionDistance = new List<OptionDistance>();
-            ////Lista de Tempo
-            //List<OptionDuration> optionDuration = new List<OptionDuration>();
-
-            //List<ComparativeOptions> comparativeOptions = new List<ComparativeOptions>();
 
             if (cenarioOption.Option.Equals("transportOption"))
             {
-                //Melhor opção de transporte para cada trajeto do cenario
-                //List<eTransportOptions> transportOptions = new List<eTransportOptions> { eTransportOptions.Cab, eTransportOptions.Driver, eTransportOptions.PublicTransportation, eTransportOptions.TransportApp };
-
                 //Cenario
                 var cenarioSelecionado = cenarios.Where(x => x.CenarioID == cenarioOption.ScenarioID).FirstOrDefault();
 
@@ -64,17 +53,6 @@ namespace WebService.Controllers
                 List<Options> optionDriver = await bestRoutesBusiness.GetBestRoutes(cenarioSelecionado.EnderecoOrigem, cenarioSelecionado.EnderecoDestino, cenarioSelecionado.HorarioSaida, string.Empty, "driving");
 
                 ComparativeOptions comparativeOptions = new ComparativeOptions();
-
-                //Traffic
-                //foreach (var item in optionTraffic)
-                //{
-                //    comparativeOptions.OptionDuration = item.DurationValue;
-                //    comparativeOptions.OptionDistance = item.DistanceValue;
-                //    comparativeOptions.OptionValue = item.CostValue;                    
-                //    comparativeOptions.TransportOptions = eTransportOptions.PublicTransportation;
-
-                //    lsComparativeOptions.Add(comparativeOptions);
-                //}
 
                 foreach (var item in optionTraffic)
                 {
@@ -92,18 +70,12 @@ namespace WebService.Controllers
                 //Driver
                 foreach (var item in optionDriver)
                 {
-                    var duration = item.DurationValue;
-                    var distance = item.DistanceValue;
-                    var cost = item.CostValue;
+                    int duration = item.DurationValue;
+                    int distance = item.DistanceValue;
 
-                    double valorTransporteAplicativo = 0.0;
-                    double valorTaxi = 0.0;
-                    double valorEstacionamento = 0.0;
-
-                    valorTransporteAplicativo = transportAppBusiness.GetCosts(duration, distance);
-                    valorTaxi = cabBusiness.GetCosts(duration, distance, cenarioSelecionado.HorarioSaida);
-                    
-                    valorEstacionamento = 0; //TODO
+                    double valorTransporteAplicativo = transportAppBusiness.GetCosts(duration, distance);
+                    double valorTaxi = cabBusiness.GetCosts(duration, distance, cenarioSelecionado.HorarioSaida);
+                    double valorEstacionamento = parkingBusiness.GetCosts(acceptableParkingDistance);
 
                     //Aplicativos
                     Comparatives comparativesAplicativos = new Comparatives();

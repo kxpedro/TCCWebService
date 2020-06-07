@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using WebService.Consuming;
 
 namespace WebService.Business.Consumer
 {
@@ -8,15 +9,11 @@ namespace WebService.Business.Consumer
     {
         public double GetCosts(int tempoViagemEmSegundos, int distanciaViagemEmMetros, TimeSpan horaDeSaida)
         {
-            TimeSpan bandeira1Inicio = new TimeSpan(6, 0, 0);
-            TimeSpan bandeira1Fim = new TimeSpan(20, 0, 0);
-            bool isBandeira1 = false;
+            CabConsumer cabConsumer = new CabConsumer();
 
-            TimeSpan bandeira2Inicio = new TimeSpan(20, 0, 0);
-            TimeSpan bandeira2Fim = new TimeSpan(6, 0, 0);
-            bool isBandeira2 = false;
+            double bandeira1Valor = 2.50;            
 
-            return 0;
+            return cabConsumer.CalculateCostsFromHours(tempoViagemEmSegundos, distanciaViagemEmMetros, horaDeSaida, bandeira1Valor);
         }
     }
 }

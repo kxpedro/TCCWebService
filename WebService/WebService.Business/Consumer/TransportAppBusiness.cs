@@ -10,8 +10,8 @@ namespace WebService.Business.Consumer
         public double GetCosts(int tempoViagemEmSegundos, int distanciaViagemEmMetros)
         {
             TransportAppConsumer transportAppConsumer = new TransportAppConsumer();
-            int tempoViagemEmMinutos = tempoViagemEmSegundos / 60;
-            int distanciaViagemEmKm = distanciaViagemEmMetros / 1000;
+            double tempoViagemEmMinutos = tempoViagemEmSegundos / 60;
+            double distanciaViagemEmKm = distanciaViagemEmMetros / 1000;
 
             return transportAppConsumer.CalculateCostFromTimeAndDistance(tempoViagemEmMinutos, distanciaViagemEmKm);
         }
