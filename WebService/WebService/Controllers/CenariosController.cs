@@ -75,7 +75,7 @@ namespace WebService.Controllers
 
                     double valorTransporteAplicativo = transportAppBusiness.GetCosts(duration, distance);
                     double valorTaxi = cabBusiness.GetCosts(duration, distance, cenarioSelecionado.HorarioSaida);
-                    double valorEstacionamento = parkingBusiness.GetCosts(acceptableParkingDistance);
+                    double valorEstacionamento = parkingBusiness.GetBestCostFromAllParkings(estacionamentos, cenarioSelecionado.EnderecoDestino, cenarioSelecionado.HorarioSaida, acceptableParkingDistance).Result;
 
                     //Aplicativos
                     Comparatives comparativesAplicativos = new Comparatives();
@@ -97,7 +97,8 @@ namespace WebService.Controllers
                     comparativesTaxi.Cost = valorTaxi;
                     comparativesTaxi.TransporteType = eTransportOptions.Cab.ToString();
 
-                    lsComparatives.Add(comparativesTaxi);
+                    lsComparatives.Add(comparativesTaxi);                    
+
 
                     //Estacionamentos
                     Comparatives comparativesEstacionamentos = new Comparatives();
